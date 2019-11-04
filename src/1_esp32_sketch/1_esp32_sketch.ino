@@ -1,5 +1,5 @@
 /**
- * @file esp32_sketch.ino
+ * @file 1_esp32_sketch.ino
  * @authors Sarim Abbas, Felicia Chang
  * @brief Software to control motors for kinetic sculpture project
  * @version 0.1
