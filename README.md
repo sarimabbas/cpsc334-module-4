@@ -15,6 +15,7 @@
         - [Laser cutting the Moire mask](#laser-cutting-the-moire-mask)
         - [Quality of Moire effect](#quality-of-moire-effect)
         - [ESP32 support of multiple steppers](#esp32-support-of-multiple-steppers)
+        - [Mounting the stepper](#mounting-the-stepper)
       - [Schematic](#schematic)
 
 #### Video demo
@@ -66,6 +67,12 @@ Each speed + slit-width configuration of the mask corresponds to a particular fr
 Although theoretically the ESP32 should be able to support multiple steppers, in practice it cannot and overheats. Therefore, we used two ESP32s to power one stepper and one servo each.
 
 We also had trouble finding the right pin configurations for multiple steppers on a single ESP32. This is because not all pins are suitable for GPIO as advertised, instead some pins are GPI.
+
+##### Mounting the stepper
+
+![Gear shaft](docs/images/gear_shaft.jpg)
+
+While the servo has provided shafts that can be hot-glued onto surfaces, there were no such attachments included with the stepper. So we 3D-printed our own gear shaft attachment to connect the stepper to the Moire mask.
 
 #### Schematic
 
