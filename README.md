@@ -56,7 +56,7 @@ The quality of the effect is dependent on several factors, such as:
 
 1. The contrast and simplicity of the animation
 
-We created multiple animations using Processing and Photoshop. The animation was spread across four frames, and had to be simple enough for a discernable effect. Given all the other problems (below), not all animations worked well.
+We created multiple animations using Processing and Photoshop. The animation was spread across four frames, and had to be simple enough for a discernable effect. Given all the other problems (below), not all animations worked well. Here is a promising animation of a running person: <https://www.youtube.com/watch?v=tGY2ZNZhZgI>
 
 2. The width of the slits
 
