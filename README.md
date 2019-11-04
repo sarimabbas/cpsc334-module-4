@@ -2,6 +2,8 @@
 
 ## Module 4 Task 2: Kinetic Sculpture
 
+![Cover](docs/images/cover.jpg)
+
 ### Table of contents
 
 - [CPSC 334 - Creative Embedded Systems](#cpsc-334---creative-embedded-systems)
