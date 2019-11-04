@@ -11,7 +11,6 @@
   - [Video demo](#video-demo)
   - [Requirements](#requirements)
   - [Goals & vision](#goals--vision)
-  - [Iteration](#iteration)
   - [Technical challenges](#technical-challenges)
     - [Laser cutting the Moire mask](#laser-cutting-the-moire-mask)
     - [Quality of Moire effect](#quality-of-moire-effect)
@@ -34,7 +33,10 @@ Link is here: <https://www.youtube.com/watch?v=QM_IjxTim6Y>
 
 ## Goals & vision
 
-## Iteration
+With FacialMotor, Sarim and I were really interested in the idea of live-animation. Nowadays animation consumed purely digitally even if the artist utilized physical techniques like claymation to create the animation. Using a technique called Moire, we attempted to create an animation through purely physical means. Moire utilizes a mask (such as a wheel with many spokes) to create the illusion of movement. By splicing four frames of animation together, the spokes reveal each frame of animation as it moves, repeating itself like a GIF.
+
+FacialMotor takes some of the animated elements of Moire and combines it with additional modes of movement to create a face that is constantly animated. More specifically, we used the effect of Moire to build the eyes of our “animated face", creating an illusory wave rotating through the eye. The effect was intentionally subtle so as to appear as a natural optical illusion. The nose and mouth were made to look identical, which provided an added quirkiness and simplicity to the form.
+The simplicity of the Facial Motor form factor allows it to be transported easily and displayed in many ways.
 
 ## Technical challenges
 
