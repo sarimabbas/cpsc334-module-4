@@ -14,9 +14,10 @@
       - [Technical challenges](#technical-challenges)
         - [Laser cutting the Moire mask](#laser-cutting-the-moire-mask)
         - [Quality of Moire effect](#quality-of-moire-effect)
-        - [ESP32 support of multiple steppers](#esp32-support-of-multiple-steppers)
+        - [ESP32 support for multiple steppers](#esp32-support-for-multiple-steppers)
         - [Mounting the stepper](#mounting-the-stepper)
       - [Schematic](#schematic)
+      - [Usage](#usage)
 
 #### Video demo
 
@@ -62,7 +63,7 @@ We contemplated increasing the width of the slits to make the underlying image m
 
 Each speed + slit-width configuration of the mask corresponds to a particular framerate. For example, the speed of the stepper in our source code is closest to 4 fps. Our animations therefore had to fit in four frames, and anything more complicated would need a faster spin.
 
-##### ESP32 support of multiple steppers
+##### ESP32 support for multiple steppers
 
 Although theoretically the ESP32 should be able to support multiple steppers, in practice it cannot and overheats. Therefore, we used two ESP32s to power one stepper and one servo each.
 
@@ -77,3 +78,10 @@ While the servo has provided shafts that can be hot-glued onto surfaces, there w
 #### Schematic
 
 ![Schematic](./docs/schematic_bb.png)
+
+#### Usage
+
+1. Wire the stepper and servo to the ESP32 as shown in the schematic
+   - You may modify the code to support 4 motors on one ESP32, however for us this led to overheating so we used two ESP32s
+2. Upload the sketch in the `src/1_esp32_sketch` folder to all ESP32s
+3. Connect the actuators to the Moire masks
