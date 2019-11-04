@@ -12,6 +12,7 @@
       - [Goals](#goals)
       - [Iteration](#iteration)
       - [Technical challenges](#technical-challenges)
+      - [Schematic](#schematic)
 
 #### Video demo
 
@@ -19,7 +20,7 @@
 
 - [x] You must use a minimum of (2* number of group members) motors and may use as many motors as you have available to your group
 - [x] The device must have an enclosure or enclosures
-- [x] The device must be safe to operate over long periods of time. For instance, if you have continuous motion, you should provide a switch that allows a user to switch off the actuators
+- [x] The device must be safe to operate over long periods of time. For instance, if you have continuous motion, you should **provide a switch** that allows a user to switch off the actuators
 - [x] The device utilizes actuators
 - [x] Reuses previous sensors, **config code**, **design principles**
 
@@ -29,5 +30,16 @@
 
 #### Iteration
 
+
 #### Technical challenges
 
+- Quality of Moire effect
+  - Small slits
+  - Low light
+  - Type of animation
+- ESP32 support of multiple steppers
+  - 
+
+#### Schematic
+
+![Schematic](./docs/schematic_bb.png)
