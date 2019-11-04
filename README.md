@@ -12,9 +12,13 @@
       - [Goals & vision](#goals--vision)
       - [Iteration](#iteration)
       - [Technical challenges](#technical-challenges)
+      - [Laser cutting the Moire mask](#laser-cutting-the-moire-mask)
+        - [Quality of Moire effect](#quality-of-moire-effect)
       - [Schematic](#schematic)
 
 #### Video demo
+
+Link is here: <https://youtu.be/fooL-Xw-Lkg>
 
 #### Requirements
 
@@ -33,8 +37,28 @@
 
 #### Technical challenges
 
-- Quality of Moire effect
+#### Laser cutting the Moire mask
+
+The masks we created are for the radial Moire effect. We cut them with a laser cutter. But because the spokes are so fine, they are prone to breaking very easily. We experimented with a number of materials for the right combination of weight and durability. 
+
+We started with cardboard, but the extremely fine ends of the spokes would crumble when touched. At that point, we contemplated either scaling up the design (which would also require changes to all our printed animations), or trying other materials.
+
+We next used wood, which best met our needs, and was easy to paint black to increase contrast with the animation. We also cut a mask in acrylic, but it proved to be difficult to paint, and required multiple rounds of rough sanding and coats of acrylic paint.
+
+##### Quality of Moire effect
+
+The final display does incorporate the Moire effect, which leads to the aliasing in spinning wheels (the eyes). However, we encountered a number of challenges:
+
+1. The wheels we laser cut had extremely delicate and thin spokes, which were prone to breaking.
+
+
+Despite that, the slits were not wide enough for observers to comprehend the animation through them. 
+
+
+
+
   - Small slits
+  - 
   - Low light
   - Type of animation
 - ESP32 support of multiple steppers
