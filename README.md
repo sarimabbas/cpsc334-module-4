@@ -22,7 +22,7 @@
 
 ## Video demo
 
-Link is here: <https://youtu.be/fooL-Xw-Lkg>
+Link is here: <https://www.youtube.com/watch?v=QM_IjxTim6Y>
 
 ## Requirements
 
