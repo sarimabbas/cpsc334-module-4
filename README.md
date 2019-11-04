@@ -12,8 +12,9 @@
       - [Goals & vision](#goals--vision)
       - [Iteration](#iteration)
       - [Technical challenges](#technical-challenges)
-      - [Laser cutting the Moire mask](#laser-cutting-the-moire-mask)
+        - [Laser cutting the Moire mask](#laser-cutting-the-moire-mask)
         - [Quality of Moire effect](#quality-of-moire-effect)
+        - [ESP32 support of multiple steppers](#esp32-support-of-multiple-steppers)
       - [Schematic](#schematic)
 
 #### Video demo
@@ -22,7 +23,7 @@ Link is here: <https://youtu.be/fooL-Xw-Lkg>
 
 #### Requirements
 
-- [x] You must use a minimum of (2* number of group members) motors and may use as many motors as you have available to your group
+- [x] You must use a minimum of (2\* number of group members) motors and may use as many motors as you have available to your group
 - [x] The device must have an enclosure or enclosures
 - [x] The device must be safe to operate over long periods of time. For instance, if you have continuous motion, you should **provide a switch** that allows a user to switch off the actuators
 - [x] The device utilizes actuators
@@ -30,38 +31,41 @@ Link is here: <https://youtu.be/fooL-Xw-Lkg>
 
 #### Goals & vision
 
-
-
 #### Iteration
-
 
 #### Technical challenges
 
-#### Laser cutting the Moire mask
+##### Laser cutting the Moire mask
 
-The masks we created are for the radial Moire effect. We cut them with a laser cutter. But because the spokes are so fine, they are prone to breaking very easily. We experimented with a number of materials for the right combination of weight and durability. 
+The masks we created are for the radial Moire effect. We cut them with a laser cutter. But because the spokes are so fine, they are prone to breaking very easily. We experimented with a number of materials for the right combination of weight and durability.
 
 We started with cardboard, but the extremely fine ends of the spokes would crumble when touched. At that point, we contemplated either scaling up the design (which would also require changes to all our printed animations), or trying other materials.
+
+![Cardboard mask](./docs/images/cardboard_mask.jpg)
 
 We next used wood, which best met our needs, and was easy to paint black to increase contrast with the animation. We also cut a mask in acrylic, but it proved to be difficult to paint, and required multiple rounds of rough sanding and coats of acrylic paint.
 
 ##### Quality of Moire effect
 
-The final display does incorporate the Moire effect, which leads to the aliasing in spinning wheels (the eyes). However, we encountered a number of challenges:
+The quality of the effect is dependent on several factors, such as:
 
-1. The wheels we laser cut had extremely delicate and thin spokes, which were prone to breaking.
+1. The contrast and simplicity of the animation
 
+We created multiple animations using Processing and Photoshop. The animation was spread across four frames, and had to be simple enough for a discernable effect. Given all the other problems (below), not all animations worked well.
 
-Despite that, the slits were not wide enough for observers to comprehend the animation through them. 
+2. The width of the slits
 
+We contemplated increasing the width of the slits to make the underlying image more visible, however this was a double edged sword because it would mean redoing the animations and adjusting our wheel speed.
 
+3. The speed of the wheel
 
+Each speed + slit-width configuration of the mask corresponds to a particular framerate. For example, the speed of the stepper in our source code is closest to 4 fps. Our animations therefore had to fit in four frames, and anything more complicated would need a faster spin.
 
-  - Small slits
-  - 
-  - Low light
-  - Type of animation
-- ESP32 support of multiple steppers
+##### ESP32 support of multiple steppers
+
+Although theoretically the ESP32 should be able to support multiple steppers, in practice it cannot and overheats. Therefore, we used two ESP32s to power one stepper and one servo each.
+
+We also had trouble finding the right pin configurations for multiple steppers on a single ESP32. This is because not all pins are suitable for GPIO as advertised, instead some pins are GPI.
 
 #### Schematic
 
