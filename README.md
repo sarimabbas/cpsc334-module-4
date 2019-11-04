@@ -9,7 +9,7 @@
     - [Table of contents](#table-of-contents)
       - [Video demo](#video-demo)
       - [Requirements](#requirements)
-      - [Goals](#goals)
+      - [Goals & vision](#goals--vision)
       - [Iteration](#iteration)
       - [Technical challenges](#technical-challenges)
       - [Schematic](#schematic)
@@ -24,7 +24,7 @@
 - [x] The device utilizes actuators
 - [x] Reuses previous sensors, **config code**, **design principles**
 
-#### Goals
+#### Goals & vision
 
 
 
@@ -38,7 +38,6 @@
   - Low light
   - Type of animation
 - ESP32 support of multiple steppers
-  - 
 
 #### Schematic
 
